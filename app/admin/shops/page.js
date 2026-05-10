@@ -790,7 +790,36 @@ export default function ManageShops() {
                       ? '💾 อัปเดตเมนู'
                       : '🚀 เพิ่มเมนู'}
                   </button>
+                  {editingMenuId && (
 
+                    <button
+                      type="button"
+                      onClick={() => {
+
+                        setEditingMenuId(null);
+
+                        setMenuFormData({
+                          name: '',
+                          price: '',
+                          image_url: ''
+                        });
+
+                      }}
+                      style={{
+                        background: '#e2e8f0',
+                        color: '#334155',
+                        border: 'none',
+                        padding: '14px',
+                        borderRadius: '14px',
+                        cursor: 'pointer',
+                        fontWeight: '700',
+                        fontSize: '15px'
+                      }}
+                    >
+                      ❌ ยกเลิกการแก้ไข
+                    </button>
+
+                  )}
                 </form>
 
               </div>
