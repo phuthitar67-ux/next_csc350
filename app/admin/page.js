@@ -436,18 +436,7 @@ const refreshData = async () => {
           </div>
         </div>
 
-        <div style={cardStyle}>
-          <div style={cardTitle}>
-            รายได้วันนี้
-          </div>
-
-          <div style={{
-            ...cardValue,
-            color: '#16a34a'
-          }}>
-            ฿{todayRevenue.toLocaleString()}
-          </div>
-        </div>
+       
 
       </div>
 
